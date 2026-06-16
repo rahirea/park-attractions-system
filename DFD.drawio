@@ -1,0 +1,131 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="SUCCG53EWoM5Upr-shnP">
+    <mxGraphModel dx="1275" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=18;fontStyle=1;align=center;" value="DFD — Контекстная диаграмма потоков данных" vertex="1">
+          <mxGeometry height="40" width="400" x="350" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mhtRab_VioPDbi8ghwm1-1" edge="1" parent="1" source="ext1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="proc2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mhtRab_VioPDbi8ghwm1-2" connectable="0" parent="mhtRab_VioPDbi8ghwm1-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Данные&amp;nbsp;&lt;div&gt;аттракциона&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.005" y="-3" as="geometry">
+            <mxPoint x="-5" y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ext1" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;fontSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" value="Администратор" vertex="1">
+          <mxGeometry height="60" width="150" x="290" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="mhtRab_VioPDbi8ghwm1-8" edge="1" parent="1" source="ext2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="proc3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mhtRab_VioPDbi8ghwm1-9" connectable="0" parent="mhtRab_VioPDbi8ghwm1-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Вход" vertex="1">
+          <mxGeometry relative="1" x="0.0517" y="5" as="geometry">
+            <mxPoint x="-1" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ext2" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;fontSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" value="Посетитель парка" vertex="1">
+          <mxGeometry height="60" width="150" x="264" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="proc3" parent="1" style="shape=ellipse;whiteSpace=wrap;html=1;fontSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" value="3.0&lt;br&gt;Продажа билетов&lt;br&gt;и регистрация&lt;br&gt;посещений" vertex="1">
+          <mxGeometry height="120" width="180" x="490" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="store1" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;size=10;" value="D1&lt;br&gt;Users" vertex="1">
+          <mxGeometry height="60" width="150" x="850" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="store2" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;size=10;" value="D2&lt;br&gt;Attractions" vertex="1">
+          <mxGeometry height="60" width="150" x="850" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="store3" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;size=10;" value="D3&lt;br&gt;Tickets" vertex="1">
+          <mxGeometry height="60" width="150" x="850" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="store4" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;size=10;" value="D4&lt;br&gt;Visits" vertex="1">
+          <mxGeometry height="60" width="150" x="850" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="store5" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;size=10;" value="D5&lt;br&gt;Sessions" vertex="1">
+          <mxGeometry height="60" width="150" x="850" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="flow1" edge="1" parent="1" source="ext1" style="endArrow=open;html=1;strokeWidth=1;fontSize=10;" target="proc1" value="Учётные данные&lt;br&gt;(логин, пароль)">
+          <mxGeometry relative="1" x="-0.0111" y="15" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow5" edge="1" parent="1" source="proc2" style="endArrow=open;html=1;strokeWidth=1;fontSize=10;" target="store2" value="CRUD-операции&lt;br&gt;(добавить, изменить)">
+          <mxGeometry relative="1" x="0.3611" y="-27" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow7" edge="1" parent="1" source="proc3" style="endArrow=open;html=1;strokeWidth=1;fontSize=10;" target="store3" value="Покупка билета">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow8" edge="1" parent="1" source="proc3" style="endArrow=open;html=1;strokeWidth=1;fontSize=10;" target="store4" value="Регистрация посещения">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow9" edge="1" parent="1" source="proc4" style="endArrow=open;html=1;strokeWidth=1;fontSize=10;" target="store5" value="Онлайн-статус">
+          <mxGeometry relative="1" x="0.0875" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow10" edge="1" parent="1" source="store5" style="endArrow=open;html=1;strokeWidth=1;fontSize=10;entryX=0.977;entryY=0.674;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.006;exitY=0.63;exitDx=0;exitDy=0;exitPerimeter=0;" target="proc4" value="Список клиентов">
+          <mxGeometry relative="1" x="0.0375" y="23" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow11" edge="1" parent="1" source="proc1" style="endArrow=open;html=1;strokeWidth=1;fontSize=10;" target="proc4" value="Статус входа">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="proc4" parent="1" style="shape=ellipse;whiteSpace=wrap;html=1;fontSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" value="4.0&lt;br&gt;Отслеживание&lt;br&gt;подключённых&lt;br&gt;клиентов" vertex="1">
+          <mxGeometry height="120" width="180" x="120" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="mhtRab_VioPDbi8ghwm1-3" edge="1" parent="1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310.0000000000001" y="100" as="sourcePoint" />
+            <mxPoint x="850" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mhtRab_VioPDbi8ghwm1-6" connectable="0" parent="mhtRab_VioPDbi8ghwm1-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Запрос данных пользователя" vertex="1">
+          <mxGeometry relative="1" x="-0.0309" y="-2" as="geometry">
+            <mxPoint y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mhtRab_VioPDbi8ghwm1-11" edge="1" parent="1" source="proc2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="proc3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mhtRab_VioPDbi8ghwm1-12" connectable="0" parent="mhtRab_VioPDbi8ghwm1-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Список&amp;nbsp;&lt;div&gt;доступных&amp;nbsp;&lt;div&gt;аттракционов&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1834" as="geometry">
+            <mxPoint x="-44" y="-22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="proc2" parent="1" style="shape=ellipse;whiteSpace=wrap;html=1;fontSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" value="2.0&lt;br&gt;Управление&lt;br&gt;аттракционами" vertex="1">
+          <mxGeometry height="100" width="180" x="550" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="mhtRab_VioPDbi8ghwm1-14" edge="1" parent="1" source="proc1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.919;exitY=0.814;exitDx=0;exitDy=0;exitPerimeter=0;" target="proc2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mhtRab_VioPDbi8ghwm1-15" connectable="0" parent="mhtRab_VioPDbi8ghwm1-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Подтверждение авторизации" vertex="1">
+          <mxGeometry relative="1" x="-0.0885" y="-1" as="geometry">
+            <mxPoint x="8" y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="proc1" parent="1" style="shape=ellipse;whiteSpace=wrap;html=1;fontSize=12;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" value="1.0&lt;br&gt;Авторизация&lt;br&gt;пользователей" vertex="1">
+          <mxGeometry height="100" width="180" x="130" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mhtRab_VioPDbi8ghwm1-4" edge="1" parent="1" source="store1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.997;entryY=0.556;entryDx=0;entryDy=0;exitX=-0.024;exitY=0.604;exitDx=0;exitDy=0;entryPerimeter=0;exitPerimeter=0;" target="proc1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="590" y="170" as="sourcePoint" />
+            <mxPoint x="1130" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mhtRab_VioPDbi8ghwm1-7" connectable="0" parent="mhtRab_VioPDbi8ghwm1-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Проверка учетных данных" vertex="1">
+          <mxGeometry relative="1" x="-0.0308" y="1" as="geometry">
+            <mxPoint x="-16" y="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
